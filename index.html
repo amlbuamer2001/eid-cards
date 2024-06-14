@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/global-rules.css">
+    <link rel="stylesheet" href="./css/scrollbar.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <section id="main-section" class="overflow-x-hidden vh-100">
+        <div class="container d-flex flex-column gap-0 gap-md-3 py-3 py-md-5">
+            <div style="text-align:center">
+                <h2 class="main-header main-color fw-bold">
+                    ضع اسمك على بطاقة المعايدة وشاركها مع احبابك
+                </h2>
+                <div class="group d-flex justify-content-center align-items-center py-2 gap-0 gap-md-2 gap-md-3">
+                    <input class="input" type="text" id="inputText" placeholder="الرجاء كتابة الاسم بالكامل" />
+                    <div>
+                        <a id="downloadBtn" href="#" class="download-btn rounded" style="display: none;">
+                            <div class="button-content">
+                                <div class="svg-container">
+                                    <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path d="M19.479 10.092c-.212-3.951-3.473-7.092-7.479-7.092-4.005 0-7.267 3.141-7.479 7.092-2.57.463-4.521 2.706-4.521 5.408 0 3.037 2.463 5.5 5.5 5.5h13c3.037 0 5.5-2.463 5.5-5.5 0-2.702-1.951-4.945-4.521-5.408zm-7.479 6.908l-4-4h3v-4h2v4h3l-4 4z"></path>
+                                    </svg>
+                                </div>
+                                <div class="text-container">
+                                    <div class="text">
+                                        تحميل
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="column text-center">
+                    <img src="./images/card1.webp" alt="Nature" class="rounded w-75" style="height: 110px;" onclick="myFunction(this, 'imgtext1', 'Nature.jpg');">
+                </div>
+                <div class="column text-center">
+                    <img src="./images/card2.webp" alt="Snow" class="rounded w-75" style="height: 110px;" onclick="myFunction(this, 'imgtext2', 'Snow.jpg');">
+                </div>
+            </div>
+            <div class="py-3 text-center position-relative d-flex justify-content-center">
+              <div id="captureArea">
+                  <img id="expandedImg" style="width: 100%;height: 100%;" class="rounded">
+                  <div id="imgtext1" class="imgtext"></div>
+                  <div id="imgtext2" class="imgtext"></div>
+                  <div id="imgtext3" class="imgtext"></div>
+                  <div id="imgtext4" class="imgtext"></div>
+              </div>
+          </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
